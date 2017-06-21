@@ -1,0 +1,16 @@
+10 PRINT "Give the hidden number: "
+20 INPUT N
+25 DIM A AS [20]
+30 PRINT "Give a number: "
+35 LET B = 5
+40 INPUT R
+45 LET A [B] = R
+50 IF R = N THEN 110
+60 IF R < N THEN 90
+70 PRINT "C-"
+80 GOTO 30
+90 PRINT "C+"
+100 GOTO 30
+110 PRINT "CONGRATULATIONS"
+115 PRINT A [B]
+120 REM "print out answer"
